@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/favicon.ico" />
 
     <!--==================== UNICONS ====================-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
 
     <!--==================== SWIPER CSS====================-->
     <link rel="stylesheet" href="swiper-bundle.min.css">
@@ -22,8 +21,7 @@
 </head>
 
 <body>
-
-
+    <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav__logo"><span class="a2">Yiwen JIANG</span> </a>
@@ -32,46 +30,43 @@
                 <ul class="nav__list grid">
                     <li class="nav__item">
                         <a href="#accueil" class="nav__link active-link">
-                            <i class="uil uil-home"></i> Accueil
+                            <i class="uil uil-estate nav__icon"></i> Accueil
                         </a>
                     </li>
-
-
-
-
                     <li class="nav__item">
                         <a href="#parcours" class="nav__link">
-                            <i class="uil uil-sort-amount-down"></i> Parcours
+                            <i class="uil uil-briefcase-alt nav__icon"></i> Parcours
                         </a>
                     </li>
-
                     <li class="nav__item">
                         <a href="#compétences" class="nav__link">
-                            <i class="uil uil-signal-alt-3"></i> Compétences
+                            <i class="uil uil-file-alt nav__icon"></i>Compétences
                         </a>
                     </li>
 
                     <li class="nav__item">
                         <a href="#projets" class="nav__link">
-                            <i class="uil uil-keyboard"></i> Projets
+                            <i class="uil uil-scenery nav__icon"></i> Projets
                         </a>
                     </li>
 
                     <li class="nav__item">
                         <a href="#contactez-moi" class="nav__link">
-                            <i class="uil uil-comment-alt-message"></i> Contactez-moi
+                            <i class="uil uil-message nav__icon"></i> Contactez-moi
                         </a>
                     </li>
 
                 </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
             </div>
-
-
-
 
             <div class="nav__btns">
                 <!-- Theme change button -->
                 <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
             </div>
         </nav>
     </header>
@@ -81,51 +76,9 @@
             <div class="accueil__container container grid">
                 <div class="accueil__content grid">
 
-                    <div class="accueil_introduction grid">
-                        <div class="accueil__img">
-
-                            <svg class="accueil__blob" viewBox="0 0 200 187 ">
-                                <mask id="mask0" mask-type="alpha">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                                </mask>
-                                <g mask="url(#mask0)">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-
-                                    <!--==================== 
-                                        Insert your image in the Img folder and Change your image |
-                                        Center your image with X: horizontal, Y: vertical 
-                                    ====================-->
-                                    <image class="accueil__blob-img" x="30" y="5" href="assets/img/photo2.png" />
-                                </g>
-
-                            </svg>
-
-
-                        </div>
-
-                        <div class="accueil__data">
-                            <h1 class="accueil__title">Bonjour, je suis Yiwen JIANG</h1>
-                            <h3 class="accueil__subtitle">Etudiante en informatique</h3>
-                            <p class="accueil__description">Très intéressée par la programmation et ai travaillé sur
-                                certains
-                                projets.</p>
-                            <div class="accueil__buttons">
-                                <!--==================== Change your CV ====================-->
-                                <a download="" href="assets/cv.pdf" class="button button--flex">
-                                    Download CV <i class="uil uil-download-alt button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
 
                     <div class="accueil__social">
-                        <a href="https://www.linkedin.com/in/yiwen-jiang-2aa469225/" target="_blank"
+                        <a href="https://www.linkedin.com/in/yiwenjiang84/" target="_blank"
                             class="accueil__social-icon">
                             <i class="uil uil-linkedin-alt"></i>
                         </a>
@@ -136,6 +89,56 @@
                             <i class="uil uil-github-alt"></i>
                         </a>
                     </div>
+                    <div class="accueil__img">
+
+                        <svg class="accueil__blob" viewBox="0 0 200 187 ">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+
+                                <!--==================== 
+                                        Insert your image in the Img folder and Change your image |
+                                        Center your image with X: horizontal, Y: vertical 
+                                    ====================-->
+                                <image class="accueil__blob-img" x="30" y="5" href="assets/img/photo2.png" />
+                            </g>
+
+                        </svg>
+
+
+                    </div>
+
+                    <div class="accueil__data">
+                        <h1 class="accueil__title">Bonjour, je suis Yiwen JIANG</h1>
+                        <h3 class="accueil__subtitle">Jeune diplômée en ingénierie informatique avec un Double Diplôme
+                            de Master en management</h3>
+                        <p class="accueil__description">Je recherche un CDI sur le développement informatique, avec une
+                            préférence dans la domaine des données(Data Engineer, Data Scientist etc), mais je suis
+                            ouverte à d'autres opportunités, disponible dès maintenant et mobile dans toute la France.
+                        </p>
+
+                        <!--==================== Change your CV ====================-->
+                        <a href="assets/cv.pdf" class="button button--flex">
+                            Download CV <i class="uil uil-download-alt button__icon"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="accueil__scroll">
+                    <a href="#parcours" class="accueil__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt accueil__scroll-mouse"></i>
+                        <span class="accueil__scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down accueil__scroll-arrow"></i>
+                    </a>
                 </div>
             </div>
         </section>
@@ -163,6 +166,28 @@
                         <!--=============== Parcours 1 ===============-->
                         <div class="parcours__data">
                             <div>
+                                <h3 class="parcours__title">Master Management : Entrepreneuriat Technologique et
+                                    Innovation</h3>
+                                <span class="parcours__subtitle">Université de Belfort - Montbéliard(UTBM)</span>
+                                <div class="parcours__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2023 - 2024
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="parcours__rounder"></span>
+                                <span class="parcours__line"></span>
+                            </div>
+                        </div>
+                        <!--=============== Parcours 2 ===============-->
+                        <div class="parcours__data">
+                            <div></div>
+                            <div>
+                                <span class="parcours__rounder"></span>
+                                <span class="parcours__line"></span>
+                            </div>
+                            <div>
                                 <h3 class="parcours__title">Diplôme d'ingénieur en informatique</h3>
                                 <span class="parcours__subtitle">Université de Belfort - Montbéliard(UTBM)</span>
                                 <div class="parcours__calendar">
@@ -171,32 +196,37 @@
                                 </div>
                             </div>
 
-                            <div>
-                                <span class="parcours__rounder"></span>
-                                <span class="parcours__line"></span>
-                            </div>
-                        </div>
 
-                        <!--=============== Parcours 2 ===============-->
-                        <div class="parcours__data">
-                            <div></div>
-                            <div>
-                                <span class="parcours__rounder"></span>
-                                <span class="parcours__line"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="parcours__title">Licence d'informatique</h3>
-                                <span class="parcours__subtitle">Université de Shanghai</span>
-                                <div class="parcours__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2018 - 2021
-                                </div>
-                            </div>
                         </div>
 
                         <!--=============== Parcours 3 ===============-->
                         <div class="parcours__data">
+                            <div>
+
+
+                                <div>
+                                    <h3 class="parcours__title">Licence d'informatique</h3>
+                                    <span class="parcours__subtitle">Université de Shanghai</span>
+                                    <div class="parcours__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2018 - 2021
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div>
+                                <span class="parcours__rounder"></span>
+                                <span class="parcours__line"></span>
+                            </div>
+                        </div>
+
+                        <!--=============== Parcours 4 ===============-->
+                        <div class="parcours__data">
+                            <div></div>
+                            <div>
+                                <span class="parcours__rounder"></span>
+
+                            </div>
                             <div>
                                 <h3 class="parcours__title">Baccalauréat</h3>
                                 <span class="parcours__subtitle">Premier Lycée de l'Université normale de Chine
@@ -207,10 +237,7 @@
                                 </div>
                             </div>
 
-                            <div>
-                                <span class="parcours__rounder"></span>
 
-                            </div>
                         </div>
 
 
@@ -221,11 +248,11 @@
                         <!--=============== Parcours 1 ===============-->
                         <div class="parcours__data">
                             <div>
-                                <h3 class="parcours__title">QA Analyst</h3>
-                                <span class="parcours__subtitle">Whip</span>
+                                <h3 class="parcours__title">Data Engineer</h3>
+                                <span class="parcours__subtitle">Orange</span>
                                 <div class="parcours__calendar">
                                     <i class="uil uil-calendar-alt"></i>
-                                    2022.7-2023.1
+                                    2024.2-2024.7
                                 </div>
                             </div>
 
@@ -234,15 +261,29 @@
                                 <span class="parcours__line"></span>
                             </div>
                         </div>
-
-                        <!--=============== Parcours 2 ===============-->
+                        <!--=============== Parcours 1 ===============-->
                         <div class="parcours__data">
                             <div></div>
 
                             <div>
                                 <span class="parcours__rounder"></span>
-
+                                <span class="parcours__line"></span>
                             </div>
+                            <div>
+                                <h3 class="parcours__title">Data Analyst</h3>
+                                <span class="parcours__subtitle">Whip</span>
+                                <div class="parcours__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2022.7-2023.1
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <!--=============== Parcours 2 ===============-->
+                        <div class="parcours__data">
+
 
                             <div>
                                 <h3 class="parcours__title">Atelier d'Eléctronique</h3>
@@ -252,6 +293,29 @@
                                     2020.7 - 2020.8
                                 </div>
                             </div>
+                            <div>
+                                <span class="parcours__rounder"></span>
+                                <span class="parcours__line"></span>
+                            </div>
+                        </div>
+                        <!--=============== Parcours 3 ===============-->
+                        <div class="parcours__data">
+                            <div></div>
+
+                            <div>
+                                <span class="parcours__rounder"></span>
+
+                            </div>
+                            <div>
+                                <h3 class="parcours__title">Atelier de Mécanique</h3>
+                                <span class="parcours__subtitle">Université de Shanghai</span>
+                                <div class="parcours__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2019.7-2019.8
+                                </div>
+                            </div>
+
+
                         </div>
 
                     </div>
@@ -292,7 +356,7 @@
                             <div class="competences__data">
                                 <div class="competences__titles">
                                     <h3 class="competences__name">MacOS</h3>
-                                    <span class="competences__number">85%</span>
+                                    <span class="competences__number">95%</span>
                                 </div>
                                 <div class="competences__bar">
                                     <span class="competences__percentage competences__macos"></span>
@@ -302,7 +366,7 @@
                             <div class="competences__data">
                                 <div class="competences__titles">
                                     <h3 class="competences__name">Linux</h3>
-                                    <span class="competences__number">70%</span>
+                                    <span class="competences__number">95%</span>
                                 </div>
                                 <div class="competences__bar">
                                     <span class="competences__percentage competences__linux"></span>
@@ -331,7 +395,7 @@
                             <div class="competences__data">
                                 <div class="competences__titles">
                                     <h3 class="competences__name">HTML</h3>
-                                    <span class="competences__number">90%</span>
+                                    <span class="competences__number">100%</span>
                                 </div>
                                 <div class="competences__bar">
                                     <span class="competences__percentage competences__html"></span>
@@ -341,7 +405,7 @@
                             <div class="competences__data">
                                 <div class="competences__titles">
                                     <h3 class="competences__name">XML</h3>
-                                    <span class="competences__number">90%</span>
+                                    <span class="competences__number">100%</span>
                                 </div>
                                 <div class="competences__bar">
                                     <span class="competences__percentage competences__xml"></span>
@@ -351,7 +415,7 @@
                             <div class="competences__data">
                                 <div class="competences__titles">
                                     <h3 class="competences__name">JSON</h3>
-                                    <span class="competences__number">90%</span>
+                                    <span class="competences__number">100%</span>
                                 </div>
                                 <div class="competences__bar">
                                     <span class="competences__percentage competences__json"></span>
@@ -361,7 +425,7 @@
                             <div class="competences__data">
                                 <div class="competences__titles">
                                     <h3 class="competences__name">CSS</h3>
-                                    <span class="competences__number">80%</span>
+                                    <span class="competences__number">90%</span>
                                 </div>
                                 <div class="competences__bar">
                                     <span class="competences__percentage competences__css"></span>
@@ -371,7 +435,7 @@
                             <div class="competences__data">
                                 <div class="competences__titles">
                                     <h3 class="competences__name">Python</h3>
-                                    <span class="competences__number">80%</span>
+                                    <span class="competences__number">95%</span>
                                 </div>
                                 <div class="competences__bar">
                                     <span class="competences__percentage competences__python"></span>
@@ -401,17 +465,26 @@
                             <div class="competences__data">
                                 <div class="competences__titles">
                                     <h3 class="competences__name">SQL</h3>
-                                    <span class="competences__number">75%</span>
+                                    <span class="competences__number">95%</span>
                                 </div>
                                 <div class="competences__bar">
                                     <span class="competences__percentage competences__sql"></span>
+                                </div>
+                            </div>
+                            <div class="competences__data">
+                                <div class="competences__titles">
+                                    <h3 class="competences__name">PL/SQL</h3>
+                                    <span class="competences__number">95%</span>
+                                </div>
+                                <div class="competences__bar">
+                                    <span class="competences__percentage competences__plsql"></span>
                                 </div>
                             </div>
 
                             <div class="competences__data">
                                 <div class="competences__titles">
                                     <h3 class="competences__name">PHP</h3>
-                                    <span class="competences__number">65%</span>
+                                    <span class="competences__number">85%</span>
                                 </div>
                                 <div class="competences__bar">
                                     <span class="competences__percentage competences__php"></span>
@@ -432,7 +505,7 @@
                             <div class="competences__data">
                                 <div class="competences__titles">
                                     <h3 class="competences__name">Javascript</h3>
-                                    <span class="competences__number">60%</span>
+                                    <span class="competences__number">80%</span>
                                 </div>
                                 <div class="competences__bar">
                                     <span class="competences__percentage competences__js"></span>
@@ -502,7 +575,7 @@
                             <div class="competences__data">
                                 <div class="competences__titles">
                                     <h3 class="competences__name">Anglais</h3>
-                                    <span class="competences__number">85%</span>
+                                    <span class="competences__number">90%</span>
                                 </div>
                                 <div class="competences__bar">
                                     <span class="competences__percentage competences__anglais"></span>
@@ -512,7 +585,7 @@
                             <div class="competences__data">
                                 <div class="competences__titles">
                                     <h3 class="competences__name">Français</h3>
-                                    <span class="competences__number">70%</span>
+                                    <span class="competences__number">90%</span>
                                 </div>
                                 <div class="competences__bar">
                                     <span class="competences__percentage competences__français"></span>
@@ -524,38 +597,33 @@
             </div>
         </section>
 
-        <!--==================== Projets ====================-->
+        <!--==================== Lettre de recommandations ====================-->
         <section class="projets section" id="projets">
-            <h2 class="section__title">Projets</h2>
-            <span class="section__subtitle">Most recent work</span>
-
+            <h2 class="section__title">Lettre de recommandation</h2>
             <div class="projets__container container swiper-container">
                 <div class="swiper-wrapper">
                     <!--=============== projets 1 ===============-->
                     <div class="projets__content grid swiper-slide">
-                        <img src="assets/img/portfolio1.jpg" alt="" class="projets__img">
+
 
                         <div class="projets__data">
-                            <h3 class="projets__title">Modern Website</h3>
-                            <p class="projets__description">Website adaptable to all devices, with ui components
-                                and animated interactions.</p>
-                            <a href="#" class="button button--flex button--small projets__button">
-                                Demo
+                            <h3 class="projets__title">Lettre de recommandation</h3>
+                            <p class="projets__description">de la part de la tutrice de stage précédent chez Orange</p>
+                            <a href="assets\LR_Tuteur_2.pdf" class="button button--flex button--small projets__button">
+                                Consulter
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
                     </div>
-
                     <!--=============== projets 2 ===============-->
                     <div class="projets__content grid swiper-slide">
-                        <img src="assets/img/portfolio2.jpg" alt="" class="projets__img">
+
 
                         <div class="projets__data">
-                            <h3 class="projets__title">Brand Design</h3>
-                            <p class="projets__description">Website adaptable to all devices, with ui components
-                                and animated interactions.</p>
-                            <a href="#" class="button button--flex button--small projets__button">
-                                Demo
+                            <h3 class="projets__title">Lettre de recommandation</h3>
+                            <p class="projets__description">de la part du tuteur de stage précédent chez Cendyn</p>
+                            <a href="assets\LR_Tuteur.pdf" class="button button--flex button--small projets__button">
+                                Consulter
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
@@ -563,14 +631,124 @@
 
                     <!--=============== projets 3 ===============-->
                     <div class="projets__content grid swiper-slide">
-                        <img src="assets/img/portfolio3.jpg" alt="" class="projets__img">
+
 
                         <div class="projets__data">
-                            <h3 class="projets__title">Online store</h3>
-                            <p class="projets__description">Website adaptable to all devices, with ui components
-                                and animated interactions.</p>
-                            <a href="#" class="button button--flex button--small projets__button">
-                                Demo
+                            <h3 class="projets__title">Lettre de recommandation</h3>
+                            <p class="projets__description">d'un professeur qui m'a enseigné </p>
+                            <a href="assets\LR_Prof.pdf" class="button button--flex button--small projets__button">
+                                Consulter
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-projets-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-projets-icon"></i>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!--==================== Projets ====================-->
+        <section class="projets section" id="projets">
+            <h2 class="section__title">Projets</h2>
+            <span class="section__subtitle">Réalisés en classe</span>
+
+            <div class="projets__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--=============== projets 1 ===============-->
+                    <div class="projets__content grid swiper-slide">
+                        <img src="assets\img\iq_puzzler.jpeg" alt="" class="projets__img">
+
+                        <div class="projets__data">
+                            <h3 class="projets__title">IQ Puzzler</h3>
+                            <p class="projets__description">Trouver des solutions pour le jeu iq puzzler en utilisant
+                                numpy</p>
+                            <a href="https://youtu.be/no78tk43BjQ"
+                                class="button button--flex button--small projets__button">
+                                Consulter
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--=============== projets 2 ===============-->
+                    <div class="projets__content grid swiper-slide">
+                        <img src="assets\img\Sim.png" alt="" class="projets__img">
+
+                        <div class="projets__data">
+                            <h3 class="projets__title">Power Sim</h3>
+                            <p class="projets__description">Simuler le fonctionnement d'une ville</p>
+                            <a href="https://youtu.be/PizWcHgl5ZE"
+                                class="button button--flex button--small projets__button">
+                                Consulter
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--=============== projets 3 ===============-->
+                    <div class="projets__content grid swiper-slide">
+                        <img src="assets\img\Survivor.png" alt="" class="projets__img">
+
+                        <div class="projets__data">
+                            <h3 class="projets__title">The Survivor</h3>
+                            <p class="projets__description">Utiliser pgame pour créer un jeu similaire à Super Mario</p>
+                            <a href="https://youtu.be/vE-OcES-tS0"
+                                class="button button--flex button--small projets__button">
+                                Consulter
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--=============== projets4 ===============-->
+                    <div class="projets__content grid swiper-slide">
+                        <img src="assets\img\Web.png" alt="" class="projets__img">
+
+                        <div class="projets__data">
+                            <h3 class="projets__title">Page Web</h3>
+                            <p class="projets__description">Page web avec inscription, compte, et interactions entre
+                                utilisateurs</p>
+                            <a href="https://www.youtube.com/watch?v=AsRrDLz0r0I"
+                                class="button button--flex button--small projets__button">
+                                Consulter
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--=============== projets5 ===============-->
+                    <div class="projets__content grid swiper-slide">
+                        <img src="assets\img\chatbot.png" alt="" class="projets__img">
+
+                        <div class="projets__data">
+                            <h3 class="projets__title">Chatbot</h3>
+                            <p class="projets__description">Utiliser le traitement du langage naturel(NLP) pour créer un
+                                chatbot médical</p>
+                            <a href="https://youtu.be/ppIORcZvFrw"
+                                class="button button--flex button--small projets__button">
+                                Consulter
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--=============== projet6===============-->
+                    <div class="projets__content grid swiper-slide">
+                        <img src="assets\img\miroirvital.png" alt="" class="projets__img">
+
+                        <div class="projets__data">
+                            <h3 class="projets__title">Miroirvital</h3>
+                            <p class="projets__description">Une application tout-en-un qui intègre le suivi de la
+                                nutrition, de l'exercice, du sommeil et du bien-être mental</p>
+                            <a href="https://www.youtube.com/watch?v=JBueIXWyJjU"
+                                class="button button--flex button--small projets__button">
+                                Consulter
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
@@ -591,7 +769,7 @@
         <!--==================== Contactez-moi ====================-->
         <section class="contact section" id="contactez-moi">
             <h2 class="section__title">Contactez-moi</h2>
-            <span class="section__subtitle"></span>
+            <span class="section__subtitle">Prendre contact</span>
 
             <div class="contact__container container grid">
                 <div>
@@ -615,7 +793,7 @@
                         <i class="uil uil-map-marker contact__icon"></i>
                         <div>
                             <h3 class="contact__title">Adresse</h3>
-                            <span class="contact__subtitle">275 Rue du Faubourg Saint-Antoine, 75011 Paris</span>
+                            <span class="contact__subtitle">39 rue Génissieu, 38000 Grenoble
                         </div>
                     </div>
                 </div>
@@ -631,9 +809,8 @@
             <div class="footer__container container grid">
                 <div>
                     <h1 class="footer__title">Yiwen JIANG</h1>
-                    <span class="footer__subtitle"></span>
+                    <span class="footer__subtitle">Etudiante en informatique et management</span>
                 </div>
-
 
 
             </div>
@@ -646,7 +823,7 @@
     <a href="#" class="scrollup" id="scroll-top">
         <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
-    <!-- Swiper JS -->
+    <!--==================== SWIPER JS ====================-->
     <script src="swiper-bundle.min.js"></script>
 
     <!--==================== JS ==========-->
