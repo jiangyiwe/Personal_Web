@@ -83,6 +83,7 @@ body.dark-theme {
 .nav__btns {
     display: flex;
     align-items: center;
+    align-items: center;
 }
 
 .change-theme {
